@@ -1,0 +1,43 @@
+@use "global/var" as v;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$fuentePrincipal;
+  background-color: v.$Dark;
+  color: v.$White;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}

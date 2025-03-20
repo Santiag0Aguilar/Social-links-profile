@@ -1,0 +1,54 @@
+@use "global/var" as v;
+@use "sass:color";
+
+.Complet-Box {
+  padding: 5rem;
+  background-color: v.$Grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 80%;
+  @media (min-width: 992px) {
+    width: 25%;
+  }
+
+  .Personal-Data {
+    display: flex;
+    flex-direction: column;
+    align-items: anchor-center;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+    }
+
+    .Location-Data {
+      color: v.$LemonGreen;
+      font-weight: bold;
+    }
+  }
+
+  .Contact-Data {
+    .Contact-Data-Btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        background-color: v.$LightGrey;
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        color: v.$White;
+        font-weight: bold;
+        border-radius: 5px;
+        &:hover {
+          background-color: color.scale(v.$LightGrey, $lightness: -10%);
+        }
+      }
+    }
+  }
+}
